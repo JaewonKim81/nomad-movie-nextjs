@@ -32,6 +32,7 @@ export default async function MovieVideos({ id }: { id: string }) {
           src={`https://www.youtube.com/embed/${video.key}`}
           title={video.name}
           allowFullScreen={true}
+          key={video.id}
         />
       ))}
     </div>
